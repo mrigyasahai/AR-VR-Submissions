@@ -1,0 +1,14 @@
+a=int(input())
+a1=""
+for i in range(a):
+    b=int(input())
+    a1+=str(b)
+d=int(input())
+a2=""
+for j in range(d):
+    p=int(input())
+    a2+=str(p)
+x=int(a2)-int(a1)
+z=str(x)
+for k in z:
+    print(k)
