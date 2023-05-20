@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class OOPS {
+    public static void main(String[] args) {
+        ap();
+    }
+
+    public static void ap(){
+
+
+         long a,n,d,s;
+         Scanner sc = new Scanner(System.in);
+    
+        a = sc.nextLong();
+        n = sc.nextLong();
+        d = sc.nextLong();
+        s = 0;
+        for(int i=1;i<=n;i++)
+        {
+            s = s + a + (i-1)*d;
+        }
+        System.out.println(s);
+    }
+}
