@@ -1,0 +1,33 @@
+ public class MinMaxSum {
+public static void main(String[] args) {
+
+ Scanner sc = new Scanner(System.in);
+ int[] a = new int[5];
+ int i;
+ for(i = 0; i < 5; i++)
+ {
+  a[i] = sc.nextInt();
+}
+
+for(i = 0; i < 5; i++)
+{
+  int j;
+  for(j=0; j<4-1; j++)
+  {
+    if(a[j] > a[j + 1])
+    {
+      int temp = a[j];
+      a[j] = a[j + 1];
+      a[j + 1] = temp;
+    }
+  }
+}
+
+int minSum = a[0] + a[1] + a[2] + a[3];
+int maxSum = a[1] + a[2] + a[3] + a[4];
+System.out.print(minSum +" "+ maxSum);
+
+
+
+}
+}
