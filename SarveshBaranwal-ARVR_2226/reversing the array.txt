@@ -1,0 +1,15 @@
+def reverse(arr, n):
+    d=arr[::-1]
+    return d
+
+def main():
+  n = int(input())
+  arr = []
+  for i in range(n) :
+    val = int(input())
+    arr.append(val)
+  arr = reverse(arr, n)
+  print(arr)
+  for i in range(n) :
+    print(arr[i], end = " ")
+main()
