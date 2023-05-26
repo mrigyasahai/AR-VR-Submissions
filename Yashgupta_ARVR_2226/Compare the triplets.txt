@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+
+int i,count=0;
+   int triplet1[3] = {1, 2, 3};
+   int triplet2[3] = {4, 5, 6};
+    
+    for (i = 0; i < 3; i++) {
+        if (triplet1[i] != triplet2[i]) {
+            count = 1; 
+            break;
+        }
+    }
+    
+    if (count == 0) {
+        printf("Triplets are equal.\n");
+    } else {
+        printf("Triplets are not equal.\n");
+    }
+    
+    return 0;
+}

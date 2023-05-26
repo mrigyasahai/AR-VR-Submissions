@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{ int n,count=0,q,a,b,arm;
+printf("enter the number");
+scanf("%d",&n);
+a=n;
+while(a>0)
+{ count=count+1;
+  a=a/10;
+  }
+ 
+b=n;
+while(b>0)
+{q=b%10;
+ arm=arm+pow(q,count);
+ b=b/10;
+}
+if(n==arm)
+printf("the number %d is armstrong number",n);
+else
+printf("number %d is not armstrong number",n);
+return 0;
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{ int a[100],n,i,temp,q=0,v=n-1;
+printf("enter the no of element in an array");
+scanf("%d",&n);
+printf("enter the element ");
+for(i=0;i<n;i++)
+  scanf("%d",&a[i]);
+while(q<v)
+{
+ temp = a[q];
+        a[q] = a[v];
+        a[v] = temp;
+        
+     
+       q++;
+        v--;}
+for(i=0;i<n;i++)
+  printf("%d",a[i]);
+return 0;
+}
