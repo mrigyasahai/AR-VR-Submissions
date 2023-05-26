@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{ int a,b,c=1;
+printf("enter the number ");
+scanf("%d",&a);
+while(a>=10)
+{  b=a%10;
+   c++;
+a=a/10;
+}
+printf("number of digit in number is %d",c);
+
+return 0; }

@@ -1,0 +1,21 @@
+int main() {
+    int f,n,c;
+ printf(" Enter the first Term");
+scanf("%d",&f);
+printf("enter the common difference");
+scanf("%d",&c);
+   printf("enter the number Of Terms");
+scanf("%d",&n);
+    
+    int sum = 0;
+    int i;
+    
+    for (i = 0; i < n; i++) {
+        int term = f + (i * c);
+        sum += term;
+    }
+    
+    printf("Sum of the arithmetic progression series: %d\n", sum);
+    
+    return 0;
+}
