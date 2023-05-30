@@ -1,0 +1,43 @@
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+/*
+ * Complete the 'simpleArraySum' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER_ARRAY ar as parameter.
+ */
+
+
+int main()
+{ 
+    int i,n,ar[1000],sum=0;
+    scanf("%d",&n);
+    for (i=0;i<n;i++)
+    {  
+        scanf("%d ",&ar[i]);
+       
+    }
+    for (i=0;i<n;i++)
+    { 
+        sum =sum+ar[i];
+    } 
+    printf("%d",sum);
+
+return 0;
+}
+
+
+ 
+
+
